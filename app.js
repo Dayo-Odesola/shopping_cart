@@ -3,6 +3,7 @@ const unitQuantity = document.querySelector('.unit-quantity');
 const unitPrice = document.querySelector('.unit-price');
 const totalPriceAll = document.querySelectorAll('.total-price');
 const subTotal = document.querySelector('.sub-value');
+const heart = document.querySelectorAll('.heart');
 
 let total = 0;
 const incPrice = e => {
@@ -63,3 +64,10 @@ productCart.addEventListener('click', e => {
     getTotal();
   }
 });
+
+
+heart.forEach(btn => {
+  btn.addEventListener('click', e => {
+    btn.classList.toggle('heart');
+  })
+})

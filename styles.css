@@ -74,3 +74,9 @@ span i {
   align-items: center;
   justify-content: space-between;
 }
+
+
+.heart {
+  cursor: pointer;
+  color: red;
+}
